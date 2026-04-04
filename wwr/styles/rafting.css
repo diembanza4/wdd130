@@ -4,7 +4,7 @@
     --secondary-color: #f4a261;
     /* warm sand */
     --accent1-color: #263653;
-    /* dark slate blue*/
+    /* dark slate blue */
     --accent2-color: #e9c46a;
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -29,25 +29,35 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
     padding: 8px;
-
 }
 
-.socialmedia a {
+header img {
+    width: 120px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: var(--secondary-color);
+    padding: 8px;
+}
+
+nav a {
+    color: var(--accent1-color);
+    font-weight: bold;
     text-decoration: none;
 }
 
+/* HERO */
 .hero {
     position: relative;
 }
@@ -84,11 +94,62 @@ article {
     color: #fff;
 }
 
-nav {
-    background-color: var(--secondary-color);
+/* HISTORY SECTION */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 16px;
+    align-items: center;
+    margin: 20px 0;
 }
 
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+/* ADVENTURES SECTION */
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.adventures figure {
+    text-align: center;
+    width: 150px;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.adventures figcaption {
+    margin-top: 6px;
+    font-size: 0.9em;
+    color: var(--primary-color);
+}
+
+/* FOOTER */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--accent2-color);
-    color: var(--accent1-color)
+    padding: 8px;
+    color: var(--accent1-color);
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
 }
