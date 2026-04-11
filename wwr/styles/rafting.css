@@ -153,3 +153,62 @@ footer .socialmedia img {
     width: 24px;
     height: 24px;
 }
+
+/* CONTACT PAGE ADDITIONS */
+.company-info {
+    margin: 20px 0;
+}
+
+.company-info .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    /* removed inline style, handled here */
+}
+
+.employees {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.employees figure {
+    text-align: center;
+    width: 200px;
+}
+
+.employees img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.contact-form {
+    margin: 20px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 8px;
+    font-family: var(--body-font);
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+}
