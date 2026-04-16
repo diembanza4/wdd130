@@ -1,0 +1,62 @@
+/* Root variables for consistency */
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #263653;
+    /* dark slate blue */
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: #fdfdfd;
+    color: var(--accent1-color);
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+footer,
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
